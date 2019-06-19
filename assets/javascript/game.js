@@ -1,5 +1,31 @@
 $(document).ready(function() {
-    
+
+    var questions =[
+        'What is R2-D2\'s name often shortened to?',
+        'Which hand did Leia use to hold her blaster?',
+        'What is the color of Obi-Wan\'s lightsaber?',
+        'Who tells Luke, "Join me and I will complete your training"?',
+        'Who was the final rescuer to enter Jabba\'s palace?',
+        'Who told Luke, "Size matters not"?',
+        'What controls a Jedi\'s actions, but also obeys his commands?',
+        'What did Han use to slice open the belly of his tauntaun?',
+        'What planet did Luke say gave him "the creeps"?'
+    ];
+
+    var answers = [
+        'R2', // 22, D2, RD
+        'Right', // Left, She didn't have one
+        'Blue', // Green, Red, Rainbow
+        'Darth Vader', // C3P0, Han, Yoda
+        'Luke', // R2-D2, C3P0, Leia
+        'Yoda', // Anakin, Chewy, Obi-Wan
+        'The Force', // Lightsaber, Evil, Pizza
+        'Lightsaber', // Toothbrush, Knife, Nothing
+        'Dagobah' // Alaska, Tatooine, Hath
+    ];
+
+
+
     var randomNumber = '';
      // randomize number of treats puppy wants
      function Numbers(min,max){

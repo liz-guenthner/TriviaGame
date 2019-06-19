@@ -1,54 +1,55 @@
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family:'starwars';
+  src:url('../font/STARWARS.eot') format('eot'),
+  url('../font/STARWARS.woff') format('woff'),
+  url('../font/STARWARS.ttf') format('truetype'),
+  url('../font/STARWARS.svg') format('svg');
+  font-weight:normal;
+  font-style:normal;
+}
+
 html, body {
-   widht:100%;
+   width:100%;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-#container {
-   width: 400px;
-   margin: 50px auto 20px auto;
+.container {
+  max-width:1100px;
+  background-image: url('../images/star-wars-background.jpg');
+  background-repeat: no-repeat;
+  padding-top: 55%;
+  background-size: cover;
+  position:relative;
+  color:#fff;
+}
+.game-container {
+  position: absolute;
+  top: 50px;
+  width: 60%;
+  margin-left: -15px;
 }
 h1 {
-    color: #000;
-    font-size:2.5em;
-    text-align:center;
-    display:inline-block;
-    vertical-align:middle;
+  font-family:starwars;
+  font-size:3em;
+  text-align:center;
 }
-img {
-    vertical-align:middle;
+h3 {
+  font-size: 1.5em;
+  width: 300px;
+  text-align: center;
+  margin: 10px auto;
 }
-#game-container {
-    margin:20px 0;
-    padding: 20px;
-    background-color: #dbdbdb;
-}
-p {
-    text-align: center;
-}
-p.blinkMe {
-    animation: blinker 0.5s linear;
-    animation-iteration-count: 3;
-}
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
-p.small {
-    margin: 10px 0 15px 0;
-    font-size:0.8em;
-}
-.game-info {
-    margin: 10px auto;
-    height:16px;
-    text-align:center;
-}
-span#alertUser {
-    color: red;
+.questions-container {
+  width: 300px;
+  margin: 30px auto;
+  background-color: #fff;
+  color: #000;
+  padding: 50px 20px;
 }
 footer {
-    width: 400px;
-    margin:0 auto;
-    text-align:center;
+  width: 400px;
+  margin:20px auto;
+  text-align:center;
 }
