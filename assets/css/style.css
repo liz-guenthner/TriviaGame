@@ -40,7 +40,7 @@ h1 {
 }
 p {
   font-size: 1.2em;
-  width: 300px;
+  width: 250px;
   text-align: center;
   margin: 20px auto;
 }
@@ -54,8 +54,11 @@ p {
   margin: 40px auto;
 }
 #answerContainer {
-  max-width: 25%;
+  max-width: 33%;
   margin: 10px auto;
+}
+.options {
+  margin: 10px 0;
 }
 .textCenter {
   text-align:center;
@@ -65,15 +68,19 @@ p {
 }
 #question {
   max-width:50%;
-  margin:0 auto;
+  margin:20px auto;
 }
-button {
-  background-color: blue;
+.blueButton {
+  background-color: #1a549e;
   color: white;
-  padding:5px;
+  padding:10px 5px;
   margin:10px;
   border-radius: 10px;
   width: 100px;
+}
+.blueButton:hover {
+  cursor: pointer;
+  background-color: #3a71b7;
 }
 
 #green {
@@ -82,6 +89,17 @@ button {
 
 #red {
   color: red;
+}
+#winLoseScreen{
+  display:none;
+  position:absolute;
+  top:10%;
+  z-index: 1000;
+  width: 100%;
+  height: 400px;
+  background-image: url('../images/winScreen.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 footer {
   width: 100%;
