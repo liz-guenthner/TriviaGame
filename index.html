@@ -9,24 +9,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="game-container">
+  <div class="container col-sm-12">
+    <div class="game-container col-sm-12 col-md-6">
       <h1>STAR WARS<br>TRIVIA GAME</h1>
-      <h3>You have 10 seconds to answer each question.</h3>
-      <div class="questions-container">
-        <p>Paragraph aslkfajsdflka asd ajdasdk</p>
+      <p>You have 20 seconds to answer each question</p>
+      
+      <div id="gameFrame">
+          <div id="topContainer" class="textCenter">
+              <p>Time: <span id="time">20</span></p>
+              <p>Question: <span id="number">0</span></p>
+              <p>Score: <span id="score">0</span></p>
+          </div>
+      
+          <hr/>
+          <div id="messageContainer" class="textCenter">
+              <div id="message">Click Begin to start</div>
+              <div id="question"></div>
+      
+              <div id="answerContainer" class="textLeft">    
+                  <div id="option1"></div>
+                  <div id="option2"></div>
+                  <div id="option3"></div>
+                  <div id="option4"></div>
+              </div>
+          </div>
+      
+          <div id="infoContainer" class="textCenter">
+              <div id="answer"></div>
+              <div id="disappear">
+                  <button>Begin</button>
+              </div>
+              <div id="next"></div>
+          </div>
+
       </div>
     </div>
-    
-          
-    <div id="clockcontainer">
-      
-    </div>
+
          
   </div>
 
