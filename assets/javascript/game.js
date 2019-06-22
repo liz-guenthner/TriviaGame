@@ -49,7 +49,7 @@ var wrong = 0;
 
 
 function begin() {
-    seconds = 30;
+    seconds = 60;
     $('#disappear').text('');
     $('#message').text('');
     $('#question').text(q[0]);
@@ -295,7 +295,7 @@ function repeat() {
     location.reload();
 }
   
-var number = 30;
+var number = 60;
 
 var intervalId = 0;
 
@@ -303,7 +303,7 @@ function runTimer() {
     if (number > 0) {
         stopTimer();
     } else {
-        number= 30;
+        number= 60;
     }
     intervalId = setInterval(decrement, 1000);
 }
