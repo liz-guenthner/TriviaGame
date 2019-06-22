@@ -203,8 +203,12 @@ function q5c() {
     $('#option2').text('');
     $('#option3').text('');
     $('#option4').text('');
+    stopTimer();
     $('#winLoseDisplay').html("<img class=\"img-fluid\" src=\"assets/images/question5-the-force.jpg\">");
     $('#winLoseDisplay').show(0).delay(3000).hide(0);
+
+    // $('#winLoseDisplay').html("<img class=\"img-fluid\" src=\"assets/images/congratulations.jpg\">");
+    // $('#winLoseDisplay').show(0).delay(3000).hide(0);
     // $('#next').html("<button class=\"blueButton\" onclick=\"end()\">End of Quiz</button>");
     score++;
     $('#score').text(score);
@@ -216,7 +220,8 @@ function q5c() {
     $('#option3').text('');
     $('#option4').text('');
     $('#next').html("<button class=\"blueButton\" onclick=\"repeat()\">Play Again</button>");
-    stopTimer();
+    
+    
 }
 
 function q5i() {
