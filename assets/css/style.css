@@ -1,4 +1,4 @@
-/* @font-face kit by Fonts2u (https://fonts2u.com) */
+
 @font-face {
   font-family:'starwars';
   src:url('../font/STARWARS.eot') format('eot'),
@@ -16,7 +16,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-  max-width:1100px;
+  max-width:1000px;
   background-image: url('../images/star-wars-background.jpg');
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -25,6 +25,8 @@ body {
   background-size: cover;
   padding: 200% 0 0 0;
   margin:0 auto;
+  min-height: 700px;
+  max-height: 700px;
 }
 .game-container {
   position:absolute;
@@ -83,23 +85,25 @@ p {
   background-color: #3a71b7;
 }
 
-#green {
+.green {
   color: green;
 }
 
-#red {
+.red {
   color: red;
 }
-#winLoseScreen{
-  display:none;
-  position:absolute;
-  top:10%;
+#winLoseDisplay {
+  position: absolute;
+  top: 20%;
   z-index: 1000;
   width: 100%;
-  height: 400px;
-  background-image: url('../images/winScreen.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+}
+#winLoseDisplay img {
+  width: 1000px;
+  margin: 0 auto;
+  position: absolute;
+  left:0;
+  right: 0;
 }
 footer {
   width: 100%;
@@ -110,6 +114,6 @@ footer {
 @media only screen and (min-width: 768px) {
   .container {
     padding-top: 55%;
-    background-size: cover;
+    /* background-size: cover; */
   }
 }

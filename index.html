@@ -15,17 +15,24 @@
 <body>
 
   <div class="container col-sm-12">
-    <div id="winLoseScreen"></div> 
-    <div class="game-container col-sm-12 col-md-6">
+
+      <!-- <button id="stop">Stop</button>
+      <button id="resume">Resume</button> -->
+  
+  
+      
+    <div id="winLoseDisplay"></div> 
+    <div class="game-container col-sm-12">
       <h1>STAR WARS<br>TRIVIA GAME</h1>
-      <p>You have 20 seconds to answer each question</p>
+      <p>You have 30 seconds to answer all the questions</p>
       
       <div id="gameFrame">
 
         <div id="topContainer" class="textCenter">
-            <p>Time: <span id="time">20</span> seconds</p>
+            <p class="red">Time left: <span id="show-number">30</span> seconds</p>
             <p>Question: <span id="number">0</span></p>
             <p>Score: <span id="score">0</span></p>
+            <p>Wrong: <span id="wrong">0</span></p>
         </div>
     
         <hr/>
